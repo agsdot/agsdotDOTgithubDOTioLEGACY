@@ -6,8 +6,7 @@ font-size: 105%;
 
 
 body {
-font-family: 'Fondamento', cursive;
-
+  font-family: 'Fondamento', cursive;
   background-image: url('../image/background_plant.jpg');
   background-size: 100%;
   color: white;

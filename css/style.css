@@ -1,57 +1,235 @@
-* {
+/*color scheme from https://kuler.adobe.com/#themeID/2424434*/
 
-font-size: 105%;
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
 
+
+/*.no-support-message {
+	display:none;
 }
 
-
+.impress-not-supported .no-support-message {
+	display:block;
+}
+*/
 body {
-  font-family: 'Fondamento', cursive;
-  background-image: url('../image/background_plant.jpg');
-  background-size: 100%;
-  color: white;
+	/*font:16px/24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+	color:#333;
+  background: url("../images/light_wool.png");
+  font-family: 'Quicksand', Verdana, sans-serif;
+  /*-webkit-font-smoothing: antialiased;*/
+  /*font-size: 200%;*/
+  /*font-weight: bold;*/
 }
 
-header {
+#impress {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.step {
+	width:940px;
+	margin:0 auto 24px auto;
 	text-align:center;
+  opacity:0.1;
+  transition:         opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition:    opacity 1s;
+  -ms-transition:     opacity 1s;
+  -o-transition:      opacity 1s;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+#social {position:absolute;top:10px;right:10px;}
+#social .social-button-wrapper {display:inline-block;margin-left:10px}
+
+
+
+#fallback-message {display:none;width:800px;margin:150px auto;font-size:20px;line-height:200%;text-align:center;}
+#fallback-message a {font-weight:bold}
+.impress-not-supported #fallback-message {display:block}
+
+/*#hint{display:none}*/
+
+/*.impress-enabled #hint{display:block;position:fixed;left:0;right:0;bottom:-100px;background:rgba(233,70,60,0.75);color:#eee;text-align:center;font-size:1.5em;padding:.5em 0;opacity:0;-webkit-transition:opacity .5s,bottom .5s;-moz-transition:opacity .5s,bottom .5s;-ms-transition:opacity .5s,bottom .5s;-o-transition:opacity .5s,bottom .5s;transition:opacity .5s,bottom .5s}*/
+/*rgb(60,241,161) added to the above */
+
+/*.impress-enabled #hint{display:block;position:fixed;left:0;right:0;bottom:-100px;background:rgba(241,161,60,0.75);color:#eee;text-align:center;font-size:1.5em;padding:.5em 0;opacity:0;-webkit-transition:opacity .5s,bottom .5s;-moz-transition:opacity .5s,bottom .5s;-ms-transition:opacity .5s,bottom .5s;-o-transition:opacity .5s,bottom .5s;transition:opacity .5s,bottom .5s}*/
+/*.impress-on-title #hint{opacity:1;bottom:0;-webkit-transition:opacity .5s 1.5s,bottom .5s 1.5s;-moz-transition:opacity .5s 1.5s,bottom .5s 1.5s;-ms-transition:opacity .5s 1.5s,bottom .5s 1.5s;-o-transition:opacity .5s 1.5s,bottom .5s 1.5s;transition:opacity .5s 1.5s,bottom .5s 1.5s}*/
+
+.arrow{
+  width:32px;
+  height:54px;
+  background:url('../images/arrows.png') no-repeat;
+  position:fixed;
+  top:50%;
+  margin-top:-27px;
+  cursor:pointer;
+  text-indent:-9999px;
+  overflow:hidden;
+  opacity:0.8;
+  border:none !important;
+  text-decoration:none !important;
+
+  -moz-transition:0.2s opacity;
+  -webkit-transition:0.2s opacity;
+  transition:0.2s opacity;
 }
 
 
-img {
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	}
-
-.container {
-	margin-bottom: 75px;
-	line-height: 150%;
+/*ARROW STYLING*/
+.arrow:hover{
+  opacity:1;
 }
 
-
-section {
-	margin-top: 70px;
-
+#arrowLeft{
+  left:45px;
 }
 
-
-a   {
-  /* Applies to all unvisited links */
-  text-decoration: none;
-  color: #FF8000;
+#arrowRight{
+  right:45px;
+  background-position:top right;
 }
 
-
-
-
-.bold {
-	font-weight: bold;
-	text-decoration: underline;
-	
+/*
+#nav p a:link {
+  color: red;
+}*/
+#nav {
+  position:relative;
+  left:17px;
+  top: 30px;
 }
 
-.btn {
-	margin: 5px 4px;
-	text-align:center;
+#nav p a:link {color:rgba(255,137,0,0.85); text-decoration: none;font-weight:bold;} /* unvisited link */
+#nav p a:visited {color:rgba(255,137,0,0.85);}  /* visited link */
+#nav p a:hover {color:rgba(255,137,0,0.85);}  /* mouse over link */
+#nav p a:active {color:rgba(255,137,0,0.85);}  /* selected link */
+
+
+/*FF8900 color for contact links*/
+
+.contact a:link {color:rgba(255,137,0,0.93); text-decoration: none;font-weight:bold;} /* unvisited link */
+.contact a:visited {color:rgba(255,137,0,0.93);}  /* visited link */
+.contact a:hover {color:rgba(255,137,0,0.93);}  /* mouse over link */
+.contact a:active {color:rgba(255,137,0,0.93);}  /* selected link */
+
+.about a:link {color:rgba(255,137,0,0.93); text-decoration: none;font-weight:bold;} /* unvisited link */
+.about a:visited {color:rgba(255,137,0,0.93);}  /* visited link */
+.about a:hover {color:rgba(255,137,0,0.93);}  /* mouse over link */
+.about a:active {color:rgba(255,137,0,0.93);}  /* selected link */
+
+.project a:link {color:rgba(255,137,0,0.93); text-decoration: none;font-weight:bold;} /* unvisited link */
+.project a:visited {color:rgba(255,137,0,0.93);}  /* visited link */
+.project a:hover {color:rgba(255,137,0,0.93);}  /* mouse over link */
+.project a:active {color:rgba(255,137,0,0.93);}  /* selected link */
+
+/*rgba(255,137,0,0.5);
+*/
+
+.hint {
+    /*
+        We hide the hint until presentation is started and from browsers not supporting
+        impress.js, as they will have a linear scrollable view ...
+    */
+    font-size: 150%;
+    display: none;
+
+    /*
+        ... and give it some fixed position and nice styles.
+    */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+
+    background: rgba(255,137,0,0.5);
+    color: #EEE;
+    text-align: center;
+
+    font-size: 50px;
+    padding: 20px;
+
+    z-index: 100;
+
+    /*
+        By default we don't want the hint to be visible, so we make it transparent ...
+    */
+    opacity: 0;
+
+    /*
+        ... and position it below the bottom of the screen (relative to it's fixed position)
+    */
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    /*
+        Now let's imagine that the hint is visible and we want to fade it out and move out
+        of the screen.
+
+        So we define the transition on the opacity property with 1s duration and another
+        transition on transform property delayed by 1s so it will happen after the fade out
+        on opacity finished.
+
+        This way user will not see the hint moving down.
+    */
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
 }
-	
+
+/*
+    Now we 'enable' the hint when presentation is initialized ...
+*/
+
+
+.impress-enabled .hint { display: block; font-size: 150%;}
+
+/*
+    ... and we will show it when the first step (with id 'bored') is active.
+*/
+.impress-on-about .hint {
+    /*
+        We remove the transparency and position the hint in its default fixed
+        position.
+    */
+    font-size: 150%;
+    opacity: 1;
+
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+
+    /*
+        Now for fade in transition we have the oposite situation from the one
+        above.
+
+        First after 4.5s delay we animate the transform property to move the hint
+        into its correct position and after that we fade it in with opacity
+        transition.
+    */
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+
+.maccomputer img {border:1px solid;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+}

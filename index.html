@@ -1,134 +1,662 @@
-<!--name, about you, list of skills, links to your social networks, an image of you, one other thing of your choice
-
-list two images, two twitter bootstraps,
-
-2 boostrap styles
-your own style sheet
-google web font
-bootstrap grid system
-2 images
-2 links
-a list
-
-page validates
-
-
-design
-
-index
-home
-welcome to my page
-
-
-socially buttons
-list style type
-fb
-tw
-linkedin
-github
-
-webpages list
-agsdot.com
-eltux.net
-jlai.org
-
-
-contactr
-email
-phone
-
-
--->
-
 
 
 <!doctype html>
-<html lang=’en’>
+<!-- With an assist from https://github.com/cubewebsites/Impress.js-Tutorial -->
+<!-- http://placeit.breezi.com/ for screenshots of websites and devices -->
+<html lang="en">
+  <head>
+    <title>JLai</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/normalize.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Quicksand|Headland+One' rel='stylesheet' type='text/css'>
 
-<head>
-	<title>Jonathan Lai</title>
-	<meta>
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="css/jlaicss.css" rel="stylesheet" type="text/css" /> -->
 
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet' type='text/css'>
+<!--         <link id="theme" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/ui-darkness/jquery-ui.css" rel="stylesheet" /> -->
+<!--         <link href="src/css/style.css" rel="stylesheet" type="text/css" /> -->
+        <!-- <link href="http://jlai.org/dist/basic-animations.css" rel="stylesheet" type="text/css" /> -->
 
-	<!--
-	<script src="dist/jmpress.demo.js"></script> -->
-</head>
+        <link href="css/style.css" rel="stylesheet" />
+<!--         <link rel="icon" type="image/ico" href="http://www.mysite.com/favicon.ico"/> -->
+        <link rel="icon" type="image/ico" href="/images/favicon.ico"/>
+        <!-- <link rel="icon" href="/favicon.ico" /> -->
 
-<body>
-	<!--html5 - section, article, header, footer, nav
+  </head>
 
-	<header>
-		<ul>
-			<li><a href="google.com">google.com</a></li>
-			<li><a href="htmldogs.com">htmldogs.com</a></li>
-			<li><a href="cnn.com">cnn.com</a></li>
 
-		</ul>
-	</header> -->
-<div class="mega_container">
-<div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="index.html">JLai Prime</a>
-    <ul class="nav">
-  <!--    <li class="active"><a href="index.html">Home</a></li>  -->
-      <li><a href="contactr.html">Contactr</a></li>
-      <li><a href="socially.html">Socially</a></li>
-      <li><a href="about.html">About</a></li>
 
-    </ul>
-  </div>
-</div>
+<body class="impress-not-supported">
 
-  <div class="container">
+<ul id="nav">
 
-    <div class="span6">
-	<header>
-	<h1>Jonathan Lai</h1>
+  <p><a href="#/about"><span>About</span></a></p>
+  <p><a href="#/projects"><span>Projects</span></a></p>
+  <p><a href="#/stack"><span>The Stack</span></a></p>
+  <p><a href="#/contact"><span>Contact</span></a></p>
+  <p><a href="#/future"><span>Future</span></a></p>
+<!--
+  <p>
+  <li><a href="#/step-4"><span>Gap</span></a></li>
+  <li><a href="#/step-1"><span>Step 1</span></a></li>
+  <li><a href="#/step-2"><span>Step 2</span></a></li>
+  <li><a href="#/step-3"><span>Step 3</span></a></li>
+-->
+</ul>
 
-			<div class="all-four-rounded-corners" ><img src="image/gambei.jpg" /></div>
-			<br>Cheers!</br>
+<!--
+    <div id="hint">
+      <p>Use spacebar, arrow keys or page up / down to navigate</p>
+    </div>
+    <script>if ('ontouchstart' in document.documentElement) {
+      document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
+    }
+    </script>
+-->
 
-	</header>
-	</div>
-
-	<div class="span1">
+    <div id="fallback-message">
+    <!-- <div class="no-support-message"> -->
+        Your browser doesn't support impress.js.  Try Chrome, Safari, or Firefox.
     </div>
 
-	<div class="span4">
 
-	<section>
+  <div id="impress">
 
-			<p class="bold">Bienvenue!</p>
-			<p>How are you?  Welcome to this 'ere Github landing page and ref point.</p>
-			<p>Enjoy your stay.</p>
-			<p> JL </p>
 
 
 <!--
-<a href="twitter.com/jonlai">jonlai fb</a>
-<a href="https://www.linkedin.com/in/jonlai1">jonlai linkedin</a>
-<a href="github.com/agsdot">jonlai github</a>
-<a href="agsdot.com">jonlai website</a>
+    unmodified project chunk, 0 0 0 coordinates before modification
+
+    <div  class="step" data-x="-700" data-y="0" data-z="500" data-rotate-y="-45">
+      <h2>Several Projects</h2>
+        Individual & Team
+    </div>
+
+    <div  class="step" >
+        <img src="images/takemetoga_01.png" width="752px" />
+    </div>
+
+    <div class="step" data-x="500" data-y="0" data-z="0" data-rotate-y="55">
+        Project: Take me to GA <br>
+        <ul class="alignleft">
+          <li>Location finder for GA locations, 4 in US, and several international</li>
+          <li>Rails: Active Record, JSON requests; Gems: Geocoder, Devise; API's: Google Maps</li>
+        </ul>
+    </div>
+
+    <div class="step" data-x="500" data-y="0" data-z="0" data-rotate-y="55">
+        <img src="images/takemetoga_02.png" width="752px" />
+    </div>
+
+    <div class="step" data-x="500" data-y="-400"  data-z="0" data-rotate-x="45">
+        <img src="images/quote8_01.png" width="752px" />
+    </div>
+
+    <div class="step" data-x="0" data-y="-400"  data-z="0" data-rotate-x="90">
+        Project: Quote8.me<br>
+        <ul class="alignleft">
+          <li>Bookmarking service for highlighted quotes on the Web</li>
+          <li>Rails: Active Record, Devise, Rails Admin, Acts as Taggable Gem; Javascript: jQuery, Javascript bookmarklet; HTML: Foundation Zurb, svg icons; Git: group project workflow</li>
+        </ul>
+    </div>
+
+    <div class="step" data-x="0" data-y="-400"  data-z="0" data-rotate-x="90">
+        <img src="images/quote8_02.png" width="752px" />
+    </div>
+ -->
+
+
+<!-- Project Coordinates Revision 2
+    <div  class="step" data-x="-700" data-y="0" data-z="1000" data-rotate-y="0" data-rotate-x="35">
+      <h2>Several Projects</h2>
+        Individual & Team
+    </div>
+
+    <div class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+aaaaaaaaaaaaaaaaaaaa======================
+    </div>
+    <div class="step" data-x="-875" data-y="0" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+bbbbbbbbbbbbbbbbbbbbb======================
+    </div>
+    <div class="step" data-x="-875" data-y="-1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+cccccccccc=================================
+    </div>
+    <div class="step" data-x="-1750" data-y="-1000" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+dddddddd=================================
+    </div>
+    <div class="step" data-x="-1750" data-y="-2000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+eeeeeeeeee=================================
+    </div>
+
+    <div class="step" data-x="-875" data-y="-2000" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+ffffffffff=================================
+    </div>
+
+
+    <div class="step" data-x="-875" data-y="-3000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+gggggggggg=================================
+    </div>
+
+    <div class="step" data-x="0" data-y="-3000" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+hhhhhhhhh=================================
+    </div>
+
+
 -->
 
 
 
-	</section>
-	</div>
+<!--     unmodified technology stack chunk, 0 0 0 coordinates before modification
+
+
+    <div  class="step" data-rotate-y="45">
+      <h1>Technologies stacks used</h1>
+    </div>
+
+    <div  class="step" data-rotate-x="270">
+      <h3>The Core matta'</h2>
+      <ul>
+        <li>Ruby, Javascript, Git, HTML, CSS</li>
+      </ul>
+    </div>
+
+    <div class="step" data-x="500" data-y="0" data-z="0" data-rotate-y="55" data-rotate-x="60">
+      <h2>And the molecules that they built</h2>
+      <ul class="alignleft">
+        <li>Rails, JQuery, Underscore, Coffeescript, Twitter Bootstrap, Impress.js </li>
+      </ul>
+    </div>
+
+
+    <div class="step" data-x="500" data-y="-400"  data-z="0" data-rotate-x="45">
+      <h2>To be churned out with</h2>
+      <ul class="alignleft">
+        <li>Heroku, Errbit, SSH, RSpec, Vim and Sublime</li>
+      </ul>
+    </div>
+
+ -->
+
+
+<!--     unmodified contact me chunk, 0 0 0 coordinates before modification
+
+
+
+    <div  class="step" data-x="1200" data-y="-1600" data-rotate-x="120">
+      <h1>Contact Me!</h1>
+    </div>
+
+    <div class="step" data-x="1200" data-y="-1600" data-z="0" data-scale="1">
+
+    email: <a href="mailto:jonathanlai AT eltux DOT net">jonathanlai AT eltux DOT net</a>
+
+    </div>
+
+    <div class="step" data-x="700" data-y="-1630" data-z="-200" data-rotate-y="30" data-rotate-z="-20">
+
+    twitter: <a href="https://twitter.com/jonlai" target="_blank">@jonlai</a>
+
+    </div>
+
+    <div class="step" data-x="1210" data-y="-2000"  data-z="0" data-rotate-x="45">
+
+    phone: first initiate an email and send me your phone #...
+    <li>I look forward to getting in contact</li>
+    </div>
+
+
+-->
+
+<!-- OG Template 0 0 0 derivative
+
+    <div class="step" data-x="0" data-y="0" data-z="0" data-scale="1">
+      <h1>The Future?</h1>
+    </div>
+
+    <div class="step" data-x="900" data-y="0" data-z="0" data-rotate-y="20">
+      cms / lms document project*</br>
+      dig deep with rails (hey, I gotta make this railscast subscription pay off)..
+      curious about Django and Laravel.
+
+    </div>
+    <div class="step" data-x="500" data-y="800" data-z="1100" data-rotate-x="30">
+      Majored in Plant Bio, and minored in education. </br>
+      Would love to work in a company dealing with healthcare, education, or food technology.
+    </div>
+
+-->
+
+
+
+
+    <div id="about" class="step"  id="title">
+      <h1>Who is JLai?</h1>
+      <ul class="alignleft">
+        <li>SF Bay local</li>
+        <li>School in Davis, volunteer education work in Oakland, Sacramento and LA</li>
+        <li>IT tech support work in LA</li>
+      </ul>
+    </div>
+
+    <div class="step about" data-x="500" data-y="0" data-z="0" data-rotate-y="55">
+      <h2>About Me:</h2>
+      <ul class="alignleft">
+        <li><a href="https://generalassemb.ly/education/web-development-immersive">GA WDI</a> graduate</li>
+        <li>Translation? General Assembly Web Development Immersive</li>
+        <li>A very good fullstack program indeed, frontend & backend, Ruby and Javascript focused</li>
+      </ul>
+    </div>
+
+    <div class="step about" data-x="500" data-y="-400"  data-z="0" data-rotate-x="45">
+      <h2>And...</h2>
+      <ul class="alignleft">
+        <li>Linux and Open Source enthusiast</li>
+        <li>Can run the three platforms (Win, Mac, Linux), and recover data in case of a crash....</li>
+      </ul>
+    </div>
+
+
+
+<!--  Projects  -1000 , -1732 , 0 multiplied by original coordinates dispositions -->
+
+<!--  Projects  -1000 , -1732 , 0 multiplied by original coordinates dispositions -->
+
+
+    <div id="projects" class="step" data-x="-1700" data-y="-1732" data-z="1000" data-rotate-y="0" data-rotate-x="35">
+      <h1>Several Projects</h1>
+        Individual & Team
+    </div>
+<!-- ... -->
+    <div class="step project" data-x="-1000" data-y="-1732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+
+        <img src="images/projects/pairprogramming_01.png" width="752px" />
+
+    </div>
+
+    <div class="step project" data-x="-1875" data-y="-1732" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+        <h2>Project: Pair Programming Bot Clone</h2>
+        <ul class="alignleft">
+          <li>A interactive website that prompts one to test, refactor, or implement a feature</li>
+          <li>Ruby: Pry debugger, Sinatra Web Framework; HTML/CSS: Twitter Bootstrap framework</li>
+          <li><a href="https://github.com/agsdot/pairprogrammingbot" target="_blank">Github source code</a></li>
+
+
+        </ul>
+    </div>
+
+
+    <div class="step project" data-x="-1875" data-y="-1732" data-z="-5" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+
+        <img src="images/projects/pairprogramming_02.png" width="752px" />
+
+    </div>
+<!-- ... -->
+    <div class="step project" data-x="-1875" data-y="-2732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+        <img src="images/projects/takemetoga_01_laptop.png" width="752px" />
+    </div>
+
+
+
+    <div class="step project" data-x="-2750" data-y="-2732" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+
+        <h2>Project: Take me to GA</h2>
+        <ul class="alignleft">
+          <li>Location finder for GA locations, 4 in the US, and several internationally</li>
+          <li>Rails: Active Record, JSON requests; Gems: Geocoder, Devise; API's: Google Maps</li>
+          <li><a href="https://github.com/agsdot/gaMapQuery" target="_blank">github source code</a></li>
+          <li><a href="http://takemetoga.herokuapp.com" target="_blank">takemetoga.herokuapp.com</a></li>
+        </ul>
+
+    </div>
+
+    <div class="step project" data-x="-2750" data-y="-2732" data-z="-5" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+
+        <img src="images/projects/takemetoga_02_laptop.png" width="752px" />
+
+    </div>
+
+<!-- ... -->
+
+    <div class="step project" data-x="-2750" data-y="-3732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+
+        <img src="images/projects/quote8_01_laptop.png" width="752px" />
+    </div>
+
+    <div class="step project" data-x="-1875" data-y="-3732" data-z="2" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+      <h2>Project: Quote8.me</h2>
+        <ul class="alignleft">
+          <li>Bookmarking service for highlighted quotes on the Web</li>
+          <li>Rails: Active Record, Devise, Rails Admin, Acts as Taggable Gem; Javascript: jQuery, Javascript bookmarklet; HTML: Foundation Zurb, svg icons; Git: group project workflow</li>
+          <li><a href="https://github.com/tdnguyen85/quote8" target="_blank">github source code</a></li>
+          <li><a href="http://www.quote8me" target="_blank">quote8.me</a></li>
+        </ul>
+    </div>
+
+    <div class="step project" data-x="-1875" data-y="-3732" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+
+        <img src="images/projects/quote8_02_laptop.png" width="752px" />
+
+    </div>
+
+<!-- ...
+
+    <div class="step" data-x="-1875" data-y="-4732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+gggggggggg=================================
+    </div>
+
+    <div class="step" data-x="-1000" data-y="-4732" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+hhhhhhhhh=================================
+    </div>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  Projects  -2732 , -732 , 0 multiplied by original coordinates dispositions -->
+<!-- offset by an additional z -1000 -->
+
+    <div id="stack" class="step" data-x="-2732" data-y="-732" data-z="1000" data-rotate-y="45">
+      <h1>Technology Stacks Used</h1>
+    </div>
+
+    <div  class="step" data-x="-2732" data-y="-732"  data-z="1000"  data-rotate-x="270">
+      <h2>The Core Building Block Matter</h2>
+
+        <li>Ruby, Javascript, Git, HTML, and CSS</li>
+
+    </div>
+
+    <div class="step" data-x="-2232" data-y="-732" data-z="1000" data-rotate-y="55" data-rotate-x="60">
+      <h2>And the molecules that they built</h2>
+      <ul class="alignleft">
+        <li>Rails, JQuery, Underscore, Coffeescript, Haml, SCSS, Twitter Bootstrap, Impress.js </li>
+      </ul>
+        <img src="images/sci/atom_01.png" /> &nbsp <img style="vertical-align: middle; margin-bottom:110px" src="images/sci/arrow_right_01.png" height="50px" b/>&nbsp &nbsp <img src="images/sci/Methane.png" width="150px" />
+
+    </div>
+
+
+    <div class="step" data-x="-2232" data-y="-1132"  data-z="1000" data-rotate-x="45">
+      <h2>To be churned out with</h2>
+      <ul class="alignleft">
+        <!-- <li>Heroku, Errbit, SSH, RSpec, Vim and Sublime</li> -->
+        <li>Github, Heroku, Vim, Sublime, Errbit, and RSpec </li>
+
+      </ul>
+    </div>
+
+
+
+<!--  Contact  1000 , -1000 , 0 multiplied by original coordinates dispositions -->
+
+
+    <div id="contact" class="step contact" data-x="2200" data-y="-2600" data-rotate-x="120">
+      <h1>Contact Me!</h1>
+    </div>
+
+
+    <!-- data-x originally set to 1700 and now its 1500 -->
+    <div class="step contact" data-x="1500" data-y="-2630" data-z="-200" data-rotate-y="30" data-rotate-z="-20">
+    <img src="images/profile.png" />
+    </div>
+
+    <div class="step contact" data-x="2200" data-y="-2600" data-z="0" data-scale="1">
+
+    twitter: <a href="https://twitter.com/jonlai" target="_blank">@jonlai</a>
+
+    </div>
+
+    <div class="step contact" data-x="2210" data-y="-3000"  data-z="0" data-rotate-x="45">
+    email: <a href="mailto:jonathanlai AT eltux DOT net">jonathanlai AT eltux DOT net</a>
+
+    </div>
+
+
+
+<!--  Future  500, -1732, 1732         0 multiplied by original coordinates dispositions -->
+
+<!--  Future  500, -1732, 3464         0 multiplied by original coordinates dispositions -->
+
+
+    <div id="future" class="step" data-x="500" data-y="-1732" data-z="3464" data-scale="1">
+      <h1>The Future?</h1>
+    </div>
+
+    <div class="step" data-x="1400" data-y="-1732" data-z="3464" data-rotate-y="20">
+      CMS / LMS document project*<br>
+      Dig deeper into Rails...
+      also curious and would like to <br>
+      learn about Django and Laravel, for python and php respectively
+
+    </div>
+    <div class="step" data-x="1000" data-y="932" data-z="4564" data-rotate-x="30">
+      Majored in Plant Bio, and minored in education. </br>
+      Would love to work in a company dealing with healthcare, education, or food technology.
+    </div>
+
+
+
+
+
+<!-- in relation to prior set, x -1200 y -1200 -->
+
+<!--
+    <div class="step" data-x="-1200" data-y="-1200" data-z="0" data-scale="1">
+        2ndo This is my first slide
+        Project: <br>
+        <ul class="alignleft">
+          <li>location finder for GA locations, 4 in US, and several international</li>
+        </ul>
+    </div>
+
+    <div class="step" data-x="-700" data-y="-1200" data-z="0" data-rotate-y="55">
+        2ndo This is slide 2
+        Project: <br>
+        <ul class="alignleft">
+          <li>quote8 me project, bookmarking service</li>
+        </ul>
+
+    </div>
+    <div class="step" data-x="-700" data-y="-1600"  data-z="0" data-rotate-x="45">
+      2ndo Slide 3
+        Project: <br>
+        <ul>
+          <li>github commits github commit graph - morris graphs</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+-->
+
+<!-- in relation to first/beginning set, x 1200 y -1600 -->
+
+
+<!--
+    <div class="step" data-x="0" data-y="0" data-z="0" data-scale="1">
+        Tercero This is my first slide
+    </div>
+
+    <div class="step" data-x="-500" data-y="-30" data-z="-200" data-rotate-y="30" data-rotate-z="-20">
+        Tercero This is slide 2
+    </div>
+
+    <div class="step" data-x="10" data-y="-400"  data-z="0" data-rotate-x="45">
+      Tercero Slide 3
+    </div>
+
+
+    <div class="step" data-x="1200" data-y="-1600" data-z="0" data-scale="1">
+        Tercero This is my first slide
+    </div>
+
+    <div class="step" data-x="700" data-y="-1630" data-z="-200" data-rotate-y="30" data-rotate-z="-20">
+        Tercero This is slide 2
+    </div>
+
+    <div class="step" data-x="1210" data-y="-2000"  data-z="0" data-rotate-x="45">
+      Tercero Slide 3
+    </div>
+
+
+
+
+    <div class="step" data-x="500" data-y="-800" data-scale="2">
+      Slide 4
+    </div>
+
+    <div class="step" data-x="0" data-y="-800" data-rotate="90">
+      Slide 5 rotatr
+    </div>
+
+    <div class="step" data-x="-100" data-y="-800" data-rotate-x="60" data-rotate-y="60" data-rotate-z="30">
+      This is slide 6 and it has a 3D transition.
+    </div>
+
+    <div class="step" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="4">
+      slide 7
+    </div>
+
+    <div class="step" data-x="-750" data-y="500" data-z="1000" data-rotate-x="90" data-rotate-z="0" data-scale="0.5">
+      http://jasoncosper.com/talks/wcphx/wp201
+
+      <div class="centeredimg"><img src="http://jasoncosper.com/talks/wcphx/wp201/images/loading.gif" /></div>
+      <span class="imgcaption">How do we reduce load time?</span>
+     </div>
+
+    <div id="designed" class="step"  data-x="0" data-y="2000" data-scale="1">
+        http://extra.12412.org/digibury/
+        <img src="http://extra.12412.org/digibury/img/shots/site_min.png" width="300" height="508" />
+        <p><b>Designed in the browser.</b></p>
+        <p>Made responsive based on what "felt" right.</p>
+    </div>
+
+    <div id="overview" class="step" data-x="-1000" data-y="-500" data-scale="3">
+    </div>
+-->
+  </div>
+
+
+
+
+<div style="position: fixed; top: 10px; right: 10px; pointer-events: auto;">
+
+    <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+<!--
+    <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+-->
+    <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="JLai.org @jonlai" data-url="http://www.jlai.org"></a>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+    <a href="http://www.linkedin.com/in/jonlai1" style="text-decoration:none">
+        <img src="images/linkedin.jpg"  height="20" alt="View Jonathan Lai's LinkedIn profile" style="margin-left:5px;" border="0">
+    </a>
+
+<!--     <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+    <a href="http://www.linkedin.com/in/jonlai1">
+        Jonathan Lai
+    </a>
+    </span> -->
 </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-30496988-2', 'agsdot.github.io');
-  ga('send', 'pageview');
 
-</script>
-</body>
+  <a id="arrowLeft" class="arrow">&lt;</a>
+  <a id="arrowRight" class="arrow">&gt;</a>
 
+
+  <div class="hint">
+      <p>Use a spacebar or arrow keys to navigate</p>
+  </div>
+  <script>
+  if ("ontouchstart" in document.documentElement) {
+      document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+  }
+  </script>
+
+  <!-- JavaScript includes -->
+
+  <script src="js/impress.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script>     
+    var api = impress();     
+    api.init();  
+
+        $('#arrowLeft').click(function(e){
+          e.preventDefault();
+          api.prev();
+        });
+
+    $('#arrowRight').click(function(e){
+          e.preventDefault();
+          api.next();
+        });
+
+    // #nav li
+                 
+    // $('#nav').hover(
+      // function () {
+      //   $(this).show();
+      // },
+    //   function () {
+    //     $(this).hide();
+    //   }
+    // );
+
+
+
+    //stackoverflow.com/questions/14942907/display-div-on-img-mouseover-jquery                 
+    $(document).ready(function(){   
+
+      $("#nav").hover(function() {
+          $(this).children("p").fadeTo(200, 1).end()
+              .children(".hover").show();
+      }, function() {
+          $(this).children("p").fadeTo(200, .05).end()
+              .children(".hover").hide();
+      });
+
+
+      $(function () {
+        var interval
+        $(document).keydown(function() {
+            if(event.keyCode==74){
+
+              interval = setInterval(function(){ api.next();},5000);
+            }
+            if(event.keyCode==75){
+              // alert('hi');
+              // clearInterval(interval);
+              // bbb = function(){
+                // alert('sooo....');
+              // };
+              // bbb();
+              a = clearInterval(interval);
+              // a();
+              // alert('bye');
+
+            }
+        });
+
+        });
+
+    });
+  </script>
+
+  </body>
 </html>
+
